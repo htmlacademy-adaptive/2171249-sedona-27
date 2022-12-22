@@ -1,0 +1,57 @@
+.navigation__link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #81b3d2;
+}
+
+.navigation__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
+
+  // outline: 5px solid rgba(0, 255, 0, 0.8);
+  // outline-offset: -5px;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+}
+
+.navigation__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #008000;
+}
+
+.navigation--opened .navigation__list {
+  display: block;
+}

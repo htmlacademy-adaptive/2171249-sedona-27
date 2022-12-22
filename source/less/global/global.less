@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+
+  background-color: #f2f2f2;
+}
+
+body {
+  display: grid;
+  min-width: 320px;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-family: @font-family;
+
+  background-color: #ffffff;
+
+  grid-template-rows: auto 1fr auto;
+  // @media (min-width: $vp-1200) {
+  //   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  // }
+}
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
