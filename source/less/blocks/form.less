@@ -1,22 +1,38 @@
+.form__fieldset--data {
+  padding: 24px 20px 39px;
+
+  border: none;
+}
+
 .form__fieldset-title {
-  font-weight: 700;
+  margin: 0 0 20px;
+
   font-size: 18px;
   line-height: 26px;
-  font-family: @font-family;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
 
+.form__fieldset--contact {
+  padding: 24px 20px 34px;
+
+  border: none;
+}
+
+.form__contact-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__contact-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  font-family: @font-family;
   color: #333333;
   text-transform: uppercase;
 }
 
 .form__contact-input {
+  padding: 16px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -31,7 +47,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  font-family: @font-family;
   color: #000000;
 }
 
@@ -39,7 +54,17 @@
   background-color: #f2f2f2;
 }
 
+.form__fieldset--feedback {
+  padding: 24px 20px;
+
+  border: none;
+}
+
 .form__feedback {
+  min-width: 279px;
+  min-height: 150px;
+  padding: 16px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -50,23 +75,25 @@
   border: none;
 }
 
-.form__submit {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  font-family: @font-family;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
+.form__fieldset--attractions {
+  padding: 24px 20px;
 
-  background-color: #81b3d2;
+  border: none;
+}
+
+.form__fieldset--emotions {
+  padding: 24px 20px 56px;
+
+  border: none;
+}
+
+.form__fieldset--submit {
+  border: none;
 }
 
 .form__note {
-  font-weight: 400;
   font-size: 12px;
   line-height: 21px;
-  font-family: @font-family;
   color: lighten(#333333, 60%);
   text-transform: uppercase;
 }
