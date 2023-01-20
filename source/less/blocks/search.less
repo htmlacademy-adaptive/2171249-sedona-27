@@ -1,11 +1,30 @@
+.search {
+  padding: 41px 18px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 67px;
+  }
+}
+
 .search__title {
-  margin: 0 0 28px;
+  margin: 0 0 20px;
 
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+
+    font-size: 30px;
+  }
 }
 
 .search__description {
@@ -14,8 +33,26 @@
   text-align: center;
   color: #333333;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
-.search {
-  padding: 38px 18px 49px;
+.search__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.search__button {
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }

@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="body">
+<body class="body no-js">
   <header class="header">
     <nav class="header__navigation navigation">
 
@@ -38,13 +38,13 @@
 
   <main class="main">
 
-    <section class="intro intro--page">
+    <section class="intro intro--page intro--form">
       <div class="intro__bg">
         <img src="img/svg/sedona.svg" width="229" height="39" alt="Седона.">
       </div>
       <div class="intro__description">
         <h1 class="intro__title">Оставьте свой отзыв</h1>
-        <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
       </div>
     </section>
 
@@ -90,15 +90,15 @@
           </h2>
           <ul class="form__options list-reset">
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="radio" name="feedback" value="Положительное" id="filter-positive" checked>
+              <input class="form__options-input" type="radio" name="feedback" value="Положительное" id="filter-positive" checked>
               <label class="form__options-label form__options-label--radio" for="filter-positive">Скорее положительное</label>
             </li>
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="radio" name="feedback" value="Отрицательное" id="filter-negative">
+              <input class="form__options-input" type="radio" name="feedback" value="Отрицательное" id="filter-negative">
               <label class="form__options-label form__options-label--radio" for="filter-negative">Скорее отрицательное</label>
             </li>
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden " type="radio" name="feedback" value="Затрудняюсь" id="filter-difficult">
+              <input class="form__options-input" type="radio" name="feedback" value="Затрудняюсь" id="filter-difficult">
               <label class="form__options-label form__options-label--radio" for="filter-difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -110,19 +110,19 @@
           </h2>
           <ul class="form__options list-reset">
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="devil-bridge" value="Мост-дьявола" id="devil-bridge" checked>
+              <input class="form__options-input" type="checkbox" name="devil-bridge" value="Мост-дьявола" id="devil-bridge" checked>
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола</label>
             </li>
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="bell-mountain" value="Гора-колокол" id="bell-mountain" checked>
+              <input class="form__options-input" type="checkbox" name="bell-mountain" value="Гора-колокол" id="bell-mountain" checked>
               <label class="form__options-label form__options-label--check" for="bell-mountain">Гора-Колокол</label>
             </li>
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park" checked>
+              <input class="form__options-input" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park" checked>
               <label class="form__options-label form__options-label--check" for="slide-park">Слайд-парк</label>
             </li>
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="red-rocks" value="Красные-скалы" id="red-rocks">
+              <input class="form__options-input" type="checkbox" name="red-rocks" value="Красные-скалы" id="red-rocks">
               <label class="form__options-label form__options-label--check" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
@@ -143,41 +143,69 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--form">
     <a class="footer__appeal" href="#">#Visitsedona</a>
     <ul class="footer__social social list-reset">
       <li class="social__item">
         <a class="social__link" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Мы в контакте.</span>
-          <svg width="24" height="14" viewbox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" />
+          <svg width="24" height="24" role="img" aria-label="Мы в контакте.">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Мы в телеграм.</span>
-          <svg width="22" height="18" viewbox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
+          <svg width="24" height="24" role="img" aria-label="Мы в Telegram.">
+            <use xlink:href="img/sprite.svg#icon-telegram"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Мы на YouTube.</span>
-          <svg width="20" height="14" viewbox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+          <svg width="20" height="14" role="img" aria-label="Мы на Yotube.">
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
     <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="footer__copyright-text">Разработано</span>
-      <svg width="27" height="35" viewbox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+      <svg width="27" height="35" role="img" aria-label="Разработано.">
+        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
       </svg>
     </a>
   </footer>
+
+  <!-- modal--opened открывает модальное окно -->
+  <!-- modal--success открывает модальное окно об успешной отправке -->
+  <!-- modal--error открывает модальное окно об ошибке -->
+  <div class="modal">
+
+    <div class="modal__container modal__container--success">
+      <div class="modal__description">
+        <p class="modal__title">Ваш отзыв отправлен!</p>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="modal__bottom">
+        <button class="modal__button button">Закрыть окно</button>
+      </div>
+    </div>
+
+    <div class="modal__container modal__container--error">
+      <div class="modal__description">
+        <p class="modal__title">Что-то пошло не&nbsp;так!</p>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__bottom">
+        <button class="modal__button button">OK</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 
