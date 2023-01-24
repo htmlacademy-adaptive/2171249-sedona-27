@@ -129,7 +129,12 @@
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
+    max-width: 300px;
+    overflow: hidden;
+
     color: #ffffff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
